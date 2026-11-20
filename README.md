@@ -11,13 +11,14 @@ Previously a research assistant at Mohamed bin Zayed University of Artificial In
 - **Backdoor and poisoning defences in federated learning**: pre-, in- and post-training mitigation, representation cleansing and unlearning
 - **Trustworthy federated learning**: mutual trust and reputation, client selection, free-rider and malicious participant detection, fairness under non-IID data
 - **Game-theoretic security**: matching and minimax formulations for robust aggregation and incentive design
-- **AI and LLM security**: prompt injection, guardrails, agent and tool-use security
+- **AI and LLM security**: prompt injection, guardrails, agent and tool-use security, Model Context Protocol (MCP) server security
 - **AI for security operations**: detection, triage and incident response grounded in MITRE ATT&CK and NIST guidance
 
 ### Featured projects
 
 | Project | Description |
 | --- | --- |
+| [mcp-vet](https://github.com/OsamaWehbi/mcp-vet) | Security scanner for MCP servers: detects tool poisoning, hidden Unicode instructions, over-permissioned tools, data exfiltration paths, rug pulls and tool shadowing. Rules mapped to the OWASP Top 10 for LLM Applications, with SARIF output and a GitHub Action. Python. |
 | [SecureAIOps](https://github.com/OsamaWehbi/SecureAIOps) | Agentic SOC copilot with a guarded multi-agent graph, AI firewall, MITRE ATT&CK mapping, explainable risk scoring and policy-grounded RAG. Python, LangGraph, FastAPI. |
 
 ### Selected publications
