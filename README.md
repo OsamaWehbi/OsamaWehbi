@@ -11,7 +11,7 @@ Previously a research assistant at Mohamed bin Zayed University of Artificial In
 - **Backdoor and poisoning defences in federated learning**: pre-, in- and post-training mitigation, representation cleansing and unlearning
 - **Trustworthy federated learning**: mutual trust and reputation, client selection, free-rider and malicious participant detection, fairness under non-IID data
 - **Game-theoretic security**: matching and minimax formulations for robust aggregation and incentive design
-- **AI and LLM security**: prompt injection, guardrails, agent and tool-use security, Model Context Protocol (MCP) server security
+- **AI and LLM security**: prompt injection, guardrails, agent and tool-use security, Model Context Protocol (MCP) server security, RAG data poisoning, canary tokens for leak detection
 - **AI for security operations**: detection, triage and incident response grounded in MITRE ATT&CK and NIST guidance
 
 ### Featured projects
@@ -19,6 +19,8 @@ Previously a research assistant at Mohamed bin Zayed University of Artificial In
 | Project | Description |
 | --- | --- |
 | [mcp-vet](https://github.com/OsamaWehbi/mcp-vet) | Security scanner for MCP servers: detects tool poisoning, hidden Unicode instructions, over-permissioned tools, data exfiltration paths, rug pulls and tool shadowing. Rules mapped to the OWASP Top 10 for LLM Applications, with SARIF output and a GitHub Action. Python. |
+| [rag-vet](https://github.com/OsamaWehbi/rag-vet) | Scanner for documents before they enter a RAG index: finds text hidden from readers but indexed by loaders (HTML, Markdown, PDF, DOCX), instructions aimed at the model, exfiltration links, secrets and personal data, and reports which chunks are affected. Corpus lockfile, SARIF output and a GitHub Action. Python. |
+| [llm-tripwire](https://github.com/OsamaWehbi/llm-tripwire) | Canary tokens for LLM applications: plant markers in system prompts, RAG documents and tool configs, and detect leaks even when a model reformats, reverses or encodes them. Includes a callback server, log watching and a streaming guard. Python. |
 | [SecureAIOps](https://github.com/OsamaWehbi/SecureAIOps) | Agentic SOC copilot with a guarded multi-agent graph, AI firewall, MITRE ATT&CK mapping, explainable risk scoring and policy-grounded RAG. Python, LangGraph, FastAPI. |
 
 ### Selected publications
